@@ -62,8 +62,8 @@ img {
   text-align: center;
   vertical-align: top;
   margin-right: 93px;
-  margin-top: 24px;
-  margin-bottom: 25px;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 .first-half-logo-title {
   color: var(--accent-color);
@@ -80,9 +80,14 @@ img {
   letter-spacing: 0.02em;
   text-align: center;
   vertical-align: top;
+}
+.nav-item {
   margin-right: 50px;
-  margin-top: 16px;
-  margin-bottom: 16px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.nav-item:last-child {
+  margin-right: 0px;
 }
 
 .top-nav .link.current {
@@ -104,9 +109,7 @@ img {
   letter-spacing: 0.02em;
   min-width: 122px;
 }
-.top-contact.link:last-child {
-  margin-left: 50px;
-}
+
 .bot-contact.geo {
   color: var(--primary-background-color);
 }
@@ -120,6 +123,13 @@ img {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+.section:nth-of-type(1) {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+.section:nth-of-type(2) {
+  padding-bottom: 0px;
 }
 .hero {
   background-color: var(--secondary-background-color);
@@ -135,7 +145,6 @@ img {
   color: var(--primary-background-color);
   line-height: calc(60 / 44);
   letter-spacing: 0.06em;
-  margin-top: 108px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -187,6 +196,7 @@ img {
   vertical-align: top;
   letter-spacing: 0.03em;
   margin-bottom: 10px;
+  text-transform: uppercase;
 }
 .feature-description {
   font-family: "Roboto", sans-serif;
@@ -211,10 +221,7 @@ img {
 .work-title {
   margin-bottom: 50px;
 }
-.work.container {
-  display: flex;
-  justify-content: space-evenly;
-}
+
 .workingprocess.list {
   display: flex;
   margin-right: calc(-1 * var(--card-list-gap));
@@ -241,6 +248,10 @@ img {
 .team-member.card:first-child {
   margin-left: 0px;
 }
+.card-content {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 
 .team-member-name {
   color: var(--primary-text-color);
@@ -251,7 +262,6 @@ img {
   text-align: center;
   vertical-align: top;
   letter-spacing: 0.03em;
-  padding-top: 30px;
 }
 .team-member-post {
   color: var(--paragraph-text-color);
@@ -262,14 +272,12 @@ img {
   vertical-align: top;
   letter-spacing: 0.03em;
   margin-top: 10px;
-  padding-bottom: 30px;
 }
 
 /*FOOTER*/
 .bot-contacts {
   font-style: normal;
   margin-top: 20px;
-  padding-bottom: 60px;
 }
 .bot-logo {
   font-family: "Raleway", sans-serif;
@@ -284,7 +292,12 @@ img {
 }
 .bottom {
   background-color: var(--secondary-background-color);
-  padding-top: 30px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.bottom:first-child {
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 .bot-contact {
   font-family: "Roboto", sans-serif;
